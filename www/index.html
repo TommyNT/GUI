@@ -13,30 +13,30 @@
 		<!-- My app main page -->
 		<div data-role="page" id="pageone">
 		  <div data-role="header">
-			<h1>Personal details</h1>
+			<h1>Tourist attractions</h1>
 		  </div>
 		  <div data-role="main" class="ui-content">
-			<p>Duong Nguyen Tuan</p>
-			<p>tommynt@outlook.com</p>
-			<p>Informatyka Stosowana</p>
-			<a href="#interests" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Interests!</a>
+			<ul>
+				<li><a href="#masuria" data-rel="popup" data-transition="slideup" class="ui-btn ui-btn-inline ui-corner-all" data-position-to="window">Masuria</li></a>
+				<li><a href="#pomerania" data-rel="popup" data-transition="slideup" class="ui-btn ui-btn-inline ui-corner-all" data-position-to="window">Pomerania</li></a>
+				<li><a href="#tatra" data-rel="popup" data-transition="slideup" class="ui-btn ui-btn-inline ui-corner-all" data-position-to="window">The Tatra Mountains</li></a>
+			</ul>
 		  </div>
-		  <div data-role="footer" data-position="fixed">
+		
+		<!-- Mobile device details page -->
+		<div data-role="popup" id="masuria" data-overlay-theme="b" data-theme="b" data-corners="false" class="ui-content">
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="./img/mazury.jpg" style="max-height:300px;" alt="Masuria">
+		</div>
+		<div data-role="popup" id="pomerania" data-overlay-theme="b" data-theme="b" data-corners="false" class="ui-content">
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="./img/pomerania.jpg" style="max-height:300px;" alt="Pomerania">
+		</div>	
+		<div data-role="popup" id="tatra" data-overlay-theme="b" data-theme="b" data-corners="false" class="ui-content">
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="./img/tatry.jpg" style="max-height:300px;" alt="The Tatra Mountains">
+		</div>			
+		
+		<div data-role="footer" data-position="fixed">
 			<h1>(c) Duong Nguyen Tuan</h1>
 		  </div> 
 		</div> 
-		
-		<!-- Mobile device details page -->
-		<div data-role="page" id="interests" data-dialog="true">
-			<div data-role="header">
-				<a href="#pageone" class="ui-btn ui-corner-all ui-icon-arrow-l ui-btn-icon-notext ui-btn-left"></a>
-				<h1>Interests</h1>
-			</div>
-			<div role="main" class="ui-content">
-				<!-- <p id="interests">Place for content ...</p> -->
-				<p>DJing x Web development x Bodybuilding x Bikes</p>
-			</div>
-		</div>		
-		
 	</body>
 </html>
