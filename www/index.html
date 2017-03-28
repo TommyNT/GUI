@@ -13,11 +13,13 @@
 		<!-- My app main page -->
 		<div data-role="page" id="pageone">
 		  <div data-role="header">
-			<h1>GUI</h1>
+			<h1>Personal details</h1>
 		  </div>
 		  <div data-role="main" class="ui-content">
-			<p>Hi, I'm your mobile device</p>
-			<a href="#details" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" onclick="deviceInfo()">Click!</a>
+			<p>Duong Nguyen Tuan</p>
+			<p>tommynt@outlook.com</p>
+			<p>Informatyka Stosowana</p>
+			<a href="#interests" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Interests!</a>
 		  </div>
 		  <div data-role="footer" data-position="fixed">
 			<h1>(c) Duong Nguyen Tuan</h1>
@@ -25,12 +27,16 @@
 		</div> 
 		
 		<!-- Mobile device details page -->
-		<div data-role="page" id="details" data-dialog="true">
+		<div data-role="page" id="interests" data-dialog="true">
 			<div data-role="header" data-theme="a">
-				<h1>Content</h1>
+				<h1>Interests</h1>
+			<a href="#pageone" class="ui-btn-left" data-icon="back">
 			</div>
 			<div role="main" class="ui-content">
-				<p id="deviceDetails">Place for content ...</p>
+				<!-- <p id="interests">Place for content ...</p> -->
+				<p>Music</p>
+				<p>Web development</p>
+				<p>Bodybuilding</p>
 			</div>
 		</div>		
 		
