@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-		id          = "Tourist Attractions"
+		id          = "Order"
         version     = "1.0.0" >
 
-    <name>Tourist attractions</name>
-    <description>Tourist attractions list with picture</description>
+    <name>Order</name>
+    <description>Order app for a purchase</description>
     <author href="https://github.com/TommyNT" email="tommynt@outlook.com">
 		Duong Nguyen Tuan
 	</author>
