@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-		id          = "Order"
+		id          = "Drinks"
         version     = "1.0.0" >
 
-    <name>Order</name>
-    <description>Order app for a purchase</description>
+    <name>Drinks</name>
+    <description>Drinks app with recipes</description>
     <author href="https://github.com/TommyNT" email="tommynt@outlook.com">
 		Duong Nguyen Tuan
 	</author>

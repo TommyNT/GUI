@@ -14,42 +14,44 @@
 		<!-- My app main page -->
 		<div data-role="page" id="pageone">
 		  <div data-role="header">
-			<h1>Order</h1>
+		  	<a href="#myPanel" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext">Bars Icon</a>
+			<h1>Drinks</h1>
 		  </div>
 		  <div data-role="main" class="ui-content">
-			<form method="get" action="">
-
-			  <div class="ui-field-contain">
-			    <label for="name">To:</label>
-			    <input type="text" name="text" id="name" value="" placeholder="Name and surname">
-			    </div>
-			    
-
-			  <div class="ui-field-contain">
-			    <label for="date">Date:</label>
-			    <input type="date" name="date" id="date" value="">
-			  </div>
-			  
-			  <div class="ui-field-contain">
-			    <label for="products">Product:</label>
-			    <select id="products" name="products" data-mini="true" data-inline="true">
-			    	<option value="Product 1">Product 1</option>
-					<option value="Product 2">Product 2</option>
-					<option value="Product 3">Product 3</option>
-					<option value="Product 4">Product 4</option>
-					<option value="Product 5">Product 5</option>
-			    </select>
-			  </div>
-
-			  <div class="ui-field-contain">
-			  	<label for="number-pattern">Quantity:</label>
-			  	<input type="number" name="number" pattern="[0-9]*" id="number-pattern" value="">
-			  </div>
-
-			</form>
-			<button class="ui-btn ui-mini">Approve</button>
-			<button class="ui-btn ui-mini">Reject</button>
+			
 		  </div>
+
+		   <div data-role="panel" id="myPanel"> 
+		    <a href="#lemonade" data-rel="popup" data-transition="slideup" class="ui-btn ui-btn-inline ui-corner-all" data-position-to="window">Lemonade</a><br>
+		    <a href="#calimocho" data-rel="popup" data-transition="slideup" class="ui-btn ui-btn-inline ui-corner-all" data-position-to="window">Calimocho</a><br>
+		    <a href="#whiskysour" data-rel="popup" data-transition="slideup" class="ui-btn ui-btn-inline ui-corner-all" data-position-to="window">Whisky Sour</a>
+		  </div> 
+
+		  <div data-role="popup" id="lemonade" data-overlay-theme="b" data-theme="b" data-corners="false" class="ui-content">
+		  	<h2>RECIPE:</h2>
+		  	<p>-1 cup white, granulated sugar (can reduce to 3/4 cup)</p>
+		  	<p>-1 cup water (for the simple syrup)</p>
+		  	<p>-1 cup lemon juice</p>
+		  	<p>-2 to 3 cups cold water (to dilute)</p>
+			<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="./img/lemonade.jpg" style="max-height:300px;" alt="Lemonade">
+		</div>
+		<div data-role="popup" id="calimocho" data-overlay-theme="b" data-theme="b" data-corners="false" class="ui-content">
+			<h2>RECIPE:</h2>
+		  	<p>-ice cubes, for serving</p>
+		  	<p>-1/2 cup cheap red wine</p>
+		  	<p>-1/2 cup cola</p>
+		  	<p>-1 lemon slice for garnish</p>
+			<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="./img/calimocho.jpg" style="max-height:300px;" alt="Calimocho">
+		</div>	
+		<div data-role="popup" id="whiskysour" data-overlay-theme="b" data-theme="b" data-corners="false" class="ui-content">
+			<h2>RECIPE:</h2>
+		  	<p>-2 parts bourbon</p>
+		  	<p>-1 part lemon juice</p>
+		  	<p>-1/2 part sugar syrup</p>
+		  	<p>-1/2 part egg white</p>
+			<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="./img/whiskysour.jpg" style="max-height:300px;" alt="Whisky Sour">
+		</div>			
+
 		
 		<div data-role="footer" data-position="fixed">
 			<h1>(c) Duong Nguyen Tuan</h1>
