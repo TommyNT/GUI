@@ -7,8 +7,9 @@
 		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
 		<script src="js/jquery-2.1.4.min.js"></script>
 		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	</head>
-	<body onload="init()">
+	<body onload="init()" class="ui-mobile-viewport ui-overlay-a">
 		
 		<!-- My app main page -->
 		<div data-role="page" id="pageone">
@@ -16,21 +17,35 @@
 			<h1>Order</h1>
 		  </div>
 		  <div data-role="main" class="ui-content">
-			<form>
-				<label for="textarea">To:</label>
-				<textarea cols="40" rows="8" name="to" id="to" placeholder="Name and surname"></textarea>
-				<label for="date">Date:</label>
-				<input type="date" name="date" id="date" value="">
-				<label for="product" class="select">Product:</label>
-				<select name="product" id="product" data-mini="true" data-inline="true">
-				    <option value="Product 1">Product 1</option>
-				    <option value="Product 2">Product 2</option>
-				    <option value="Product 3">Product 3</option>
-				    <option value="Product 4">Product 4</option>
+			<form method="get" action="">
+
+			  <div class="ui-field-contain">
+			    <label for="name">To:</label>
+			    <input type="text" name="text" id="name" value="" placeholder="Name and surname">
+			    </div>
+			    
+
+			  <div class="ui-field-contain">
+			    <label for="date">Date:</label>
+			    <input type="date" name="date" id="date" value="">
+			  </div>
+			  
+			  <div class="ui-field-contain">
+			    <label for="products">Product:</label>
+			    <select id="products" name="products" data-mini="true" data-inline="true">
+			    	<option value="Product 1">Product 1</option>
+					<option value="Product 2">Product 2</option>
+					<option value="Product 3">Product 3</option>
+					<option value="Product 4">Product 4</option>
 					<option value="Product 5">Product 5</option>
-				</select>
-				<label for="number-pattern">Quantity:</label>
-				<input type="number" name="number" pattern="[0-9]*" id="number-pattern" value="">
+			    </select>
+			  </div>
+
+			  <div class="ui-field-contain">
+			  	<label for="number-pattern">Quantity:</label>
+			  	<input type="number" name="number" pattern="[0-9]*" id="number-pattern" value="">
+			  </div>
+
 			</form>
 			<button class="ui-btn ui-mini">Approve</button>
 			<button class="ui-btn ui-mini">Reject</button>
